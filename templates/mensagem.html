@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+
+  
+{% block couteudo %}
+<p> <a href="/">Pagina Principal</a></p>
+<form>
+    <p>
+        <label for='usuario'>Úsuario: <br></label>
+        <input id="usuario" type=text></input>
+    </p>
+    <p>
+        <label for='mensagem'>Mensagem: <br></label>
+        <textarea id='mensagem'></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar"></input>
+    </p>
+</form>
+
+{% endblock %}

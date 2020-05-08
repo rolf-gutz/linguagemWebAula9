@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block couteudo %}
+<p><a href="/mensagem">Enviar Mensagem</a></p>
+
+{% for mensagem in mensagens %}
+                {% if loop.first %}
+                <ul>
+                {% endif%}
+                    <li>{{ mensagem }} </li>
+                {% if loop.last %}
+                </ul>
+                {% endif %}
+                {% else %}
+                <p> Nenhuma Mensagem</p>
+            {% endfor %}    
+{% endblock %}
